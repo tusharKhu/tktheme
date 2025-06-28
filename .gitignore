@@ -1,0 +1,5 @@
+.phpintel
+.saas-cache
+scss/.saas-cache/
+.idea/
+dist/
