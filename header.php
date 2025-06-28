@@ -6,11 +6,11 @@
  */
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php language_attributes(); ?>"><!-- language attribute basically set language based on what u want if want to chnage labguage based on country so it can change dynamicaaly -->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset');  ?>"> <!-- blog info display the information for the current site -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tushar Custom Theme</title>
+    <?php wp_head(); ?>
 </head>
 <body>
     <header> Header</header>
