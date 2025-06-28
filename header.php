@@ -13,5 +13,10 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('hello-class'); ?>> <!-- It add bunch of class in different places so we can use it for styling purpose-->
-    <?php wp_body_open(); ?> <!-- If we want to add the scripts inside the body in that case we can use it for analytic etc purposes...-->
-    <header> Header</header>
+  <?php
+    if(function_exists('wp_body_open'))
+    {
+        wp_body_open();  //If we want to add the scripts inside the body in that case we can use it for analytic etc purposes...
+    }
+  ?>
+<header> Header</header>
