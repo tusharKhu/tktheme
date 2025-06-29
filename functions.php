@@ -5,6 +5,12 @@
  * @package tktheme
  */
 
+ if(!define('TKTHEME_DIR_PATH'))
+ {
+   define('TKTHEME_DIR_PATH', untrailingslashit(get_template_directory()));
+ }
+ require_once TKTHEME_DIR_PATH . '/inc/helpers/autoloader.php';
+
  function tktheme_enqueue_scripts()
  {
     // wp_enqueue_style('style-css', get_stylesheet_uri(), [] , filemtime( get_template_directory() . '/style.css'),'all');

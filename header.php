@@ -19,4 +19,10 @@
         wp_body_open();  //If we want to add the scripts inside the body in that case we can use it for analytic etc purposes...
     }
   ?>
-<header> Header</header>
+
+<div id="page" class="site">
+    <header id="masthead" class="site-header" role="banner"> 
+       <?php  get_template_part('template-parts/header/nav') ?>
+    </header>
+    <div id="content" class="site-content">
+          
